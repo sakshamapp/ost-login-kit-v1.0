@@ -1,0 +1,23 @@
+<ion-view view-title="Send Bitcoin">
+  <ion-content>
+    <ion-list>
+      <div class="card"  >
+		  <div class="item item-divider">Send Bitcoin</div>
+		  <div class="item item-text-wrap">
+		  		<div class="row responsive-sm padding remvoeBP">
+				  <div class="col">
+						<div class="list list-inset removePM">
+						  <label class="item item-input"><input type="text" ng-model="sendBitcoin.address" placeholder="Address" > </label>
+						  <label class="item item-input"><input type="text" ng-model="sendBitcoin.amount" placeholder="Amount" >  </label>
+						  <label class="item item-input"><input type="text" ng-model="sendBitcoin.fees" placeholder="Fees" >  </label>
+						  <label class="item item-input"><input type="text" ng-model="sendBitcoin.description" placeholder="Description" >  </label>
+						</div>
+
+						<div class="loginButton"><button class="button  button-block button-balanced" ng-click="sendMoney(sendBitcoin)" > Send </button>  </div>
+				  </div>
+			  </div>
+		  </div>
+	  </div>
+    </ion-list>
+  </ion-content>
+</ion-view>

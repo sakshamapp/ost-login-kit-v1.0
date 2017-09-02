@@ -1,0 +1,13 @@
+<ion-view view-title="Transaction Report" hide-back-button="true">
+  <ion-content>
+	   <div class="card" ng-if="allData.length!=0" ng-repeat="allData in allData">
+		  <div class="item item-divider">Payment To : {{allData.to}}</div>
+		  <div class="item item-text-wrap">{{allData.amount | currency:'$':2}}</div>
+		  <div class="item item-text-wrap">{{allData.response_message}}</div>
+	  </div>
+	  <div class="card" ng-if="allData.length==0">
+		  <div class="item item-divider">No data found</div>
+	  </div>
+    </ion-list>
+  </ion-content>
+</ion-view>
